@@ -1,5 +1,6 @@
 {
-	"name": "jh.sayhi",
+	"name": "sayhi",
+	"publisher": "jh",
 	"displayName": "sayHi",
 	"description": "",
 	"version": "0.0.1",

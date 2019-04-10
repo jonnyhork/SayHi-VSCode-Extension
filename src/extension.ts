@@ -2,6 +2,8 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
+const sayWhatExports = vscode.extensions.getExtension("jh.sayWhat")!.exports;
+const getMessage = sayWhatExports.getMessage;
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -15,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		let message =  await vscode.window.showInputBox();
+		let message =  await getMessage();
 		vscode.window.showInformationMessage(`Hi ${message}!`);
 	});
 
