@@ -1,8 +1,7 @@
 import * as vscode from "vscode";
 
-const sayWhatExtension = vscode.extensions.getExtension("jh.saywhat")!;
-
 export function activate(context: vscode.ExtensionContext) {
+  const sayWhatExtension = vscode.extensions.getExtension("jh.saywhat")!;
   console.log(
     'Congratulations, your extension -----"SAY HI"--- is now active!'
   );

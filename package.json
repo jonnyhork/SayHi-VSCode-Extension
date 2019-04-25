@@ -10,11 +10,11 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:sayHi.displayMessage"
-  ],
   "extensionDependencies": [
     "jh.saywhat"
+  ],
+  "activationEvents": [
+    "onCommand:sayHi.displayMessage"
   ],
   "main": "./out/extension.js",
   "contributes": {
